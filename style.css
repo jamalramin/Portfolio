@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #008d92;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 40px;
+    background-color: #cae7df;
+    height: 70px;
+    width: 100%;
+    opacity:0.8;
+
+}
+
+header ion-icon {
+    font-size:30px;
+    color: #000;
+}
+
+header #menu-bar {
+    display:none;
+    align-items: center;
+    justify-content: jucst;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 250px;
+    flex-direction: column;
+    color: #000;
+    background-color: #fff;
+    border: none;
+}
+
+header #menu-bar div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+    transform: scale(0.9);
+}
+header #menu-bar div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 20px 80px;
+
+}
+header #menu-bar div ion-icon{
+    font-size: 20px;
+}
+
+header #menu-bar a {
+    margin:0 20px;
+    color: #000;
+    text-decoration: none;
+}
+ h1 {
+    font-size: 17px;
+ }
+/* this one belongs to the about section  */
+
+
+.container .about {
+    padding: 20px 40px;
+}
+
+.container .about h1{
+    line-height:20px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.container .about p{
+    font-size: 14px;
+    color: #fff;
+    text-align: justify;
+}
+
+.container .about img{
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    margin: 30px 35px;
+}
+
+/* information  */
+
+.container .information {
+    padding: 20px 40px;
+    color: #fff;
+}
+
+.container .information h1 {
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.container .information p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.container .information img {
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    margin: 30px 35px;
+}
+
+/* this part belongs to the skill section */
+
+.container .skills {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.container .skills div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:10px 20px;
+    text-align: center;
+    height: 380px;
+    width: 300px;
+    border: none;
+    margin: 20px;
+    background-color:darkslategray;
+}
+
+.container .skills div ion-icon {
+    transform: scale(3);
+    padding:30px 0 27px 0;
+    color: yellow;
+}
+
+.container .skills div h1{
+    font-size: 23px;
+    color:2;
+    line-height: 40px;
+    color: #008d92;
+    padding-bottom:20px;
+}
+
+.container .skills div p {
+    color: #fff;
+}
+
+/* form  */
+
+.form{
+    /* position: relative; */
+    padding:40px;
+    height:350px;
+    width: 300px;
+    border:0.3px solid white;
+    transform: scale(0.9);
+    margin:0 51px;
+    box-shadow:  0 0 20px white;
+}
+
+.form h1 {
+    font-size: 30px;
+}
+
+.form .main .icon ion-icon {
+    color: #fff;
+}
+
+.form .main{
+    position: relative;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
+}
+
+.form .main label{
+    position: absolute;
+    top:10px;
+    left:1px;
+    color: #fff;
+    transition-duration:.5s;
+    pointer-events: none;
+    font-size: 16px;
+}
+.form .main input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+}
+
+.main input:focus ~ label,
+.main input:valid ~ label{
+    top:-10px;
+    font-size: 13px;
+    color: yellow;
+}
+
+.form .main .icon{
+    position: absolute;
+    right: 8px;
+    bottom: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.form input:nth-last-child(1){
+    background-color: yellow;
+    color: #000;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    text-transform:capitalize;
+}
+
+/* popup */
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 50px 0;
+    max-height: 100%;
+    background-color: yellow;
+    margin:-50px auto;
+    transform:scale(0);
+    transition-duration: 0.8s;
+    border-radius:4px;
+    border: 2px solid white;
+    position: relative;
+    top: -230px;
+    visibility: hidden;
+}
+
+.openPopup{
+    transform: scale(1);
+    position: relative;
+    top: -240;
+    visibility: visible;
+}
+
+
+.popup p{
+    margin: 20px ;
+}
+
+.popup img{
+    transform: scale(0.2);
+    position: absolute;
+    bottom:30px;
+}
+
+.popup button {
+    padding:7px;
+    width: 80%;
+}
+
+
+
+/* fotter  */
+
+footer{
+    height: 200px;
+    background-color:rgb(15, 41, 41);
+    padding:50px 30px;
+    display: flex;
+    align-items: center;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer ul h2 {
+    font-size: 17px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+footer ul div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li ion-icon{
+    margin:10px;
+    font-size:25px;
+}
+
+/* social media styles  */
+
+#facebook{
+    color: #1872f2;
+}
+
+#instagram {
+    color: rgb(206, 30, 206);
+}
+
+#youtube {
+    color: rgb(241, 46, 46);
+}
+
+#twetter {
+    color: #1da1f2;
+}

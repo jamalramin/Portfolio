@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="style.js"></script>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=.5.6
+    +, initial-scale=1.0">
+    <title>portfolio</title>
+<!--  -->
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("oaazgMppMr1E9SHcT");
+        })();
+    </script>
+
+
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- header  -->
+        <header>
+            <h1 style="font-family: 'Dancing Script', cursive; font-size: 30px;"><span style="color: #f92c85;">Ra</span><span style="color: #3aafa9;">min</span></h1>
+            <ion-icon name="reorder-four-outline" onclick="show();" id="bar"></ion-icon>
+            <div id="menu-bar">
+                <div>
+                    <h1 style="font-family: 'Dancing Script', cursive; font-size: 30px;"><span style="color: #f92c85;">Ra</span><span style="color: #3aafa9;">min</span></h1>
+                    <ion-icon name="close-outline" id="close" onclick="clo();" style="font-size: 30px;"></ion-icon>
+                </div>
+                <div><ion-icon name="home-outline"></ion-icon><a href="#home">Home</a></div>
+                <div><ion-icon name="people-outline"></ion-icon><a href="#about">About</a></div>
+                <div><ion-icon name="bulb-outline"></ion-icon><a href="#skills" >Skills</a></div>
+                <div><ion-icon name="chatbox-ellipses-outline"></ion-icon><a href="#form">Message</a></div>
+                <div><ion-icon name="call-outline"></ion-icon><a href="#form">Contact</a></div>
+            </div>
+        </header>
+
+
+
+        <!-- about  -->
+
+        <div class="about" id="home">
+            <h2 style="color:yellow;">-- WELCOME --</h2>
+            <h1>I'm a <span style="color:yellow;">Website Designer </span></h1>
+            <p> with having 8 months of experince, I'm a frontend Developer. </p>
+            <img src="./img/IMG_20230127_141055_384.jpg" alt="">
+        </div>
+
+        <!-- information  -->
+
+        <div class="information" id="about">
+            <h1 style="color: lightpurple;">About <span style="color:yellow;">Me </span></h1>
+            <p>My name is Ramin jamal. I am an Afghan Frontend developer . My skill is to create simple websites using html , css & javascript for now . On the other hand , i can carve beatiful designs on wood. Beside website design & wood carving i have the capability to fix laptop problems . </p>
+            <img src="./img/321658026_696618951868882_404906550939463653_n.jpg" alt="">
+        </div>
+
+        <!-- skills  -->
+
+        <div class="skills" id="skills">
+            <h1 style="padding:50px; font-size:30px; color: white;">-- My <span style="color: yellow;"> Skills --</span></h1>
+            <div>
+                <ion-icon name="code-slash-outline"></ion-icon>
+                <h1>Website Design </h1>
+                <p>Web design is the art of planning and arranging content on a website so that it can be shared and accessed online. If you need any website i'm a frontend developer and i can help you make your own website for the improvment of your bussiness . </p>
+            </div>
+            <div>
+                <ion-icon name="hammer-outline"></ion-icon>
+                <h1>Wood Carving</h1>
+                <p>Wood carving is a type of woodworking in which people use knives, chisels, and other hand-held wood carving tools to create beatiful designs in pieces of wood for the decoration of houses , office and other places. i have the skill to carve on wood .</p>
+            </div>
+            <div>
+                <ion-icon name="laptop-outline"></ion-icon>
+                <h1>Fixing Laptop</h1>
+                <p> Computer is a machine which can be instructed to accept, process, store and output data.In today's world one of the most important tool's for the improvment of every soceity is Laptops and computers. Some of the times they are not going to work anymore here i am to fix it . </p>
+            </div>
+        </div>
+
+        <!-- contact  -->
+
+        <div id="form" class="form">
+            <h1 style="text-align: center; color: yellow;">Message</h1> 
+            <div class="main">
+                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                <input type="text"name="name" required id="name">
+                <label>Full name</label>
+            </div>
+            <div class="main">
+                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                <input type="text" id="message" required  name="message">
+                <label>Message</label> 
+            </div>
+            <input type="submit" value="send"id="button" onclick="sendMail();" onmousedown="openPopup();">
+        </div>
+        
+        <div class="popup" id="popup">
+            <img src="./img/pngtree-green-check-mark-png-image_6525691.png">
+            <h1>Thank You</h1>
+            <p>Your message sent Successfully</p>
+            <button onclick="closePopup();"> OK </button>
+        </div>
+
+        <!-- links  -->
+         
+        <footer>
+            <ul>
+                <h2>Do you want to get <br>
+                    in touch with <span style="color: yellow;">me ?</span></h2>
+                <div>
+                    <li><a href="https://m.facebook.com/ramin.jamal.75"><ion-icon name="logo-facebook" id="facebook"></ion-icon ></a></li>
+                    <li><a href="https://instagram.com/_ramin_jamal?igshid=ZDc4ODBmNjlmNQ=="><ion-icon name="logo-instagram" id="instagram"></ion-icon></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCTVrDtVpPXJedCis4uhpUjQ"><ion-icon name="logo-youtube" id="youtube"></ion-icon></a></li>
+                    <li><a href="https://twitter.com/Ramin61787752"><ion-icon name="logo-twitter" id="twetter"></ion-icon></a></li>
+                </div>
+            </ul>
+        </footer>
+    </div>
+
+
+    <!-- ion icon  -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
